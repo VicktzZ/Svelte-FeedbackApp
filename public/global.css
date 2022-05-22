@@ -8,9 +8,27 @@
 
 body {
 	font-family: 'Poppins', sans-serif;
-	background-color: #EA4C3C;
+	animation: backgroundTransition 45s infinite alternate;
 	color: #fff;
 	line-height: 1.6;
+}
+
+@keyframes backgroundTransition {
+	0%{
+		background-color: #EA4C3C;
+	}
+	
+	50%{
+		background-color: #ea6d3c;
+	}
+
+	75%{
+		background-color: #eab33c;
+	}
+
+	100%{
+		background-color: #bcea3c
+	}
 }
 
 ul {
